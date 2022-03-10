@@ -1,0 +1,115 @@
+:root {
+  --blue: #22f;
+  --white: #ddd;
+  --black: #222;
+  --gray: #ccc;
+  --box-shadow: 5pt 10pt 10pt rgba(0, 0, 255, 0.1);
+}
+
+body {
+  background-color: var(--white);
+}
+
+nav {
+  display: flex;
+  padding: 10pt 20pt;
+  justify-content: flex-end;
+}
+
+.login {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 600;
+}
+
+.login > .round-icon {
+  background-image: url("https://www.expresfm.cz/media/images/profimedia-0416254060.2f619c6b.fill-600x400.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: 15pt;
+}
+.brand-icon {
+  background-color: var(--blue);
+  color: var(--white);
+  font-weight: 700;
+  font-size: 16pt;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40pt;
+  height: 40pt;
+  border-radius: 30pt 30pt 30pt 0;
+}
+
+.round-icon {
+  width: 40pt;
+  height: 40pt;
+  border-radius: 30pt;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.white-icon {
+  border: 2pt solid var(--blue);
+  background-color: var(--white);
+  color: var(--blue);
+}
+
+article {
+  background-color: var(--blue);
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50pt;
+  padding-top: 100pt;
+  border-radius: 20pt;
+  margin: 0pt 40pt;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  background-color: var(--gray);
+  height: 300pt;
+  width: 200pt;
+  border-radius: 10pt;
+  padding: 20pt 30pt 0 20pt;
+  box-shadow: var(--box-shadow);
+}
+
+.form > h1 {
+  color: var(--blue);
+  align-self: flex-start;
+  font-weight: 500;
+}
+
+.form-item {
+  display: flex;
+  align-items: center;
+  padding-left: 10pt;
+  font-size: 12pt;
+  margin-bottom: 5pt;
+}
+
+.form-item > span {
+  padding-right: 8pt;
+}
+.form-item > .round-icon{
+    box-shadow: var(--box-shadow);
+}
+.form-item.selected > .white-icon {
+  background-color: var(--blue);
+  border-color: var(--white);
+    color: var(--white);
+}
+.form-item.selected > span {
+  color: var(--blue);
+
+}
+.form-footer{
+    background-color: var(--white);
+    height: 40pt;
+    width: 100%;
+    color: var(--gray);
+}
